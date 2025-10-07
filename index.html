@@ -1,8 +1,157 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwant Kumar - Finance Professional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <!-- <img src="profile.jpg" alt="Yashwant Kumar" class="profile-img"> --> <!-- Uncomment and upload photo to repo -->
+            <h1>Yashwant Kumar</h1>
+            <p class="tagline">Finance Professional & Proactive Learner</p>
+            <div class="contact">
+                <span>+91 9852602676</span> | 
+                <a href="mailto:yashym9274@gmail.com">yashym9274@gmail.com</a> | 
+                Faridabad, Haryana, India | 
+                DOB: Sep 23, 1998 | 
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Proactive learner with sound understanding of core finance principles, compliance, and documentation.</p>
+            <ul>
+                <li>Hands-on exposure in audit, mutual fund research, and taxation during multiple internships.</li>
+                <li>Strong communication and collaboration skills; thrives in both team and independent work environments.</li>
+                <li>Quick to learn financial tools and systems like Power BI and Excel for reporting and insights.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Intern - Nirbhaya and Associates</h3>
+                <p class="date">Jun 2024 — Aug 2024 | Dumka, India</p>
+                <ul>
+                    <li>Assisted in statutory audits, ledger scrutiny, and GST compliance.</li>
+                    <li>Learned the fundamentals of accounting systems, tax filings, and audit procedures.</li>
+                    <li>Developed documentation and reporting skills under the supervision of chartered accountants.</li>
+                    <li>Received positive feedback for professionalism, punctuality, and learning ability.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Intern - IDFC Asset Management Company</h3>
+                <p class="date">Jan 2021 | Ranchi, India</p>
+                <ul>
+                    <li>Studied the significance of mutual funds as financial instruments in long-term wealth creation.</li>
+                    <li>Analyzed investor behavior and need-based portfolio planning.</li>
+                    <li>Delivered actionable insights on MF suitability for different risk profiles.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>MBA in Finance</h3>
+                <p class="date">Dr. Shyama Prasad Mukherjee University (GPA: 8.2) | Oct 2024 | Ranchi, Jharkhand</p>
+            </div>
+            <div class="card">
+                <h3>BBA in Marketing</h3>
+                <p class="date">Ranchi College, Ranchi (GPA: 6.6) | Oct 2021 | Ranchi, Jharkhand</p>
+            </div>
+            <div class="card">
+                <h3>12th Standard</h3>
+                <p class="date">M A K Azad Inter College, Basantrai (GPA: 6.4) | May 2016 | Godda, Jharkhand</p>
+            </div>
+            <div class="card">
+                <h3>10th Standard</h3>
+                <p class="date">Adwaita Mission High School (GPA: 9) | May 2014 | Banka, Bihar</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul class="cert-list">
+                <li>Power BI</li>
+                <li>Investment Banking</li>
+                <li>TCS iON Career Edge - Young Professional</li>
+                <li>Fundamentals of Digital Marketing</li>
+                <li>Global Banking and Markets</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-category">
+                <h3>Analytics & Finance</h3>
+                <ul class="skills-list">
+                    <li>Business Analytics</li>
+                    <li>Financial Analysis</li>
+                    <li>Mutual Fund and Investment Research</li>
+                    <li>Financial Reporting</li>
+                    <li>Reporting and Documentation</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Technical</h3>
+                <ul class="skills-list">
+                    <li>MS Excel</li>
+                    <li>MS PowerPoint</li>
+                    <li>MS Word</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul class="skills-list">
+                    <li>Problem-Solver</li>
+                    <li>Adaptability</li>
+                    <li>Analytical Thinking</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Languages</h3>
+                <ul class="skills-list">
+                    <li>Hindi</li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yashwant Kumar. Built with GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
